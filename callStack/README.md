@@ -1,0 +1,3 @@
+Call Stack: A mechanism the JS interpreter uses to keep track of its place in the script that calls multiple functions. 
+A stack is a basic data structure in computer science. Follows the Last In First Out (LIFO) method. i.e., add to the top, remove from the top of the stack. 
+When a script calls a function, the interpreter adds it to the top of the stack and then starts executing that function. Any functions called by that first function, are then added to the top of the stack and their execution begins. When a function is done running, the interpreter takes it off of the stack and picks up where it left off on the previous function. 
