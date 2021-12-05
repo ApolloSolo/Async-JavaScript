@@ -24,3 +24,20 @@ fakeRequest('dogs.com')
         console.log(err);
     })
 
+    /***Use Promise to change background color***/
+    const changeColor = (delay, color) => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                document.body.style.backgroundColor = color;
+                resolve();
+            },delay);
+        })
+    }
+
+changeColor(1000, "red")
+    .then(() => changeColor(1000, "orange")) //implicit return syntax
+    .then(() => changeColor(1000, "yellow"))
+    .then(() => changeColor(1000, "green"))
+    .then(() => changeColor(1000, "blue"))
+    .then(() => changeColor(1000, "indigo"))
+    .then(() => changeColor(1000, "violet"))
