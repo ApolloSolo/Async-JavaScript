@@ -33,7 +33,7 @@ fakeRequest('dogs.com')
             },delay);
         })
     }
-
+/*
 changeColor(1000, "red")
     .then(() => changeColor(1000, "orange")) //implicit return syntax
     .then(() => changeColor(1000, "yellow"))
@@ -41,3 +41,9 @@ changeColor(1000, "red")
     .then(() => changeColor(1000, "blue"))
     .then(() => changeColor(1000, "indigo"))
     .then(() => changeColor(1000, "violet"))
+*/
+
+    async function rainbow() {
+        await changeColor(1000, "red") //will only run once the promise has been resolved
+        changeColor(1000, "yellow")
+    }
