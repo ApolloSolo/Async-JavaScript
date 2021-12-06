@@ -1,0 +1,26 @@
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#show-names{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+    justify-items:center;
+    width: 100%;
+    background-color: black;
+}
+
+@media only screen and (max-width: 850px) {
+    #show-names{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+  }
